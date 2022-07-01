@@ -1,3 +1,6 @@
+# User
+.prettierrc.json
+
 # Logs
 logs
 *.log
