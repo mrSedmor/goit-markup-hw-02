@@ -1,0 +1,211 @@
+:root {
+  /* Главное оформление - темный текст на светлом фоне */
+  /* Альтернативное (инверсное) оформление - светлый текст на темном фоне */
+
+  /* Цвета фона: */
+
+  /* #FFFFFF Хедер */
+  /* #FFFFFF Особенности, чем занимаемся, примеры работ */
+  --primary-background-color: #ffffff;
+
+  /* #2F303A Герой */
+  /* #2F303A Футер */
+  --dark-background-color: #2f303a;
+
+  /* #F5F4FA Наша команда */
+
+  /* Цвета текста: */
+
+  /* #2196F3, #000000 лого в хедере*/
+  --logo-color: #000000;
+
+  /* #2196F3, #FFFFFF лого в футере*/
+
+  /* #2196F3 - акцент*/
+  --accent-color: #2196f3;
+
+  /* #212121 - nav в хедере*/
+  /* #212121 - заголовок в разделах */
+  --title-color: #212121;
+
+  /* #757575 - контакты в хедере */
+  /* #757575 - абзацы */
+  --primary-text-color: #757575;
+
+  /* #FFFFFF - заголовок и кнопка в герое */
+  /* #FFFFFF - адрес в футере */
+  --white-color: #ffffff;
+
+  /* rgba(255, 255, 255, 0.6) - контакты в футере */
+  --address-contacts-color: rgba(255, 255, 255, 0.6);
+
+  /* #188ce8 - акцент кнопки в герое */
+  --hero-button-accent-background: #188ce8;
+}
+
+/* временно: */
+.hero,
+.footer {
+  background-color: var(--dark-background-color);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.section-title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Хедер */
+/*  Логотип */
+.logo {
+  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: var(--logo-color);
+}
+
+.logo.inverse {
+  color: var(--white-color);
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.header-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  /* color: var(--title-color); */
+}
+
+/* Герой */
+.hero {
+  text-align: center;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--white-color);
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hero-button-accent-background);
+}
+
+/* Особенности */
+
+.feature-title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Чем мы занимаемся */
+
+/* Наша команда */
+
+.members {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+}
+.member-title {
+  color: var(--title-color);
+  font-weight: 500;
+}
+
+.member-description {
+  font-weight: 400;
+}
+
+/* Футер */
+
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address-location {
+  color: var(--white-color);
+}
+
+.address-contacts {
+  color: var(--address-contacts-color);
+}
