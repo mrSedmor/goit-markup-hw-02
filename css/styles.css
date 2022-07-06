@@ -68,6 +68,7 @@ body {
 .link {
   color: inherit;
   text-decoration: inherit;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -196,14 +197,18 @@ body {
   background-color: var(--team-section-background-color);
 }
 
-.members {
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-
+.member-item {
   text-align: center;
   background-color: var(--white-color);
 }
+
+.member-title,
+.member-description {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
 .member-title {
   font-weight: 500;
 
