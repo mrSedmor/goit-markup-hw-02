@@ -6,7 +6,7 @@
 
   /* #FFFFFF Хедер */
   /* #FFFFFF Особенности, чем занимаемся, примеры работ */
-  --primary-background-color: #ffffff;
+  /* --primary-background-color: #ffffff; */
 
   /* #2F303A Герой */
   /* #2F303A Футер */
@@ -40,10 +40,11 @@
   --address-contacts-color: rgb(255 255 255 / 0.6);
 
   /* #188ce8 - акцент кнопки в герое */
-  --hero-button-accent-background: #188ce8;
+  --hero-button-accent-background-color: #188ce8;
 
-  /* #F5F4FA - основной цвет фона кнопки в портфолио */
-  --portfolio-button-background: #f5f4fa;
+  /* #F5F4FA - основной цвет фона кнопки в портфолио, фон секции наша команда */
+  --portfolio-button-background-color: #f5f4fa;
+  --team-section-background-color: #f5f4fa;
 }
 
 /* временно: */
@@ -57,7 +58,7 @@ body {
 
   color: var(--primary-text-color);
 
-  background-color: var(--primary-background-color);
+  /* background-color: var(--primary-background-color); */
 }
 
 .list {
@@ -67,6 +68,19 @@ body {
 .link {
   color: inherit;
   text-decoration: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-title {
@@ -154,7 +168,7 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--hero-button-accent-background);
+  background-color: var(--hero-button-accent-background-color);
 }
 
 /* Особенности */
@@ -178,12 +192,17 @@ body {
 
 /* Наша команда */
 
+.team-section {
+  background-color: var(--team-section-background-color);
+}
+
 .members {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 
   text-align: center;
+  background-color: var(--white-color);
 }
 .member-title {
   font-weight: 500;
@@ -201,7 +220,7 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--title-color);
-  background-color: var(--portfolio-button-background);
+  background-color: var(--portfolio-button-background-color);
   text-align: center;
   cursor: pointer;
 }
